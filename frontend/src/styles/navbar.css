@@ -1,0 +1,114 @@
+/* ==========================
+        NAVBAR
+========================== */
+
+.navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(5,8,22,.75);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-container{
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+/* Logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:52px;
+    height:52px;
+    object-fit:contain;
+}
+
+.logo h2{
+    font-size:1.5rem;
+    color:#ffffff;
+    font-weight:700;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.nav-links li a{
+    color:#cbd5e1;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+.nav-links li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#2563eb;
+    transition:.3s;
+}
+
+.nav-links li a:hover{
+    color:#ffffff;
+}
+
+.nav-links li a:hover::after{
+    width:100%;
+}
+
+/* Button */
+
+.status-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 22px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.status-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+}
+
+.status-btn svg{
+    font-size:18px;
+}
+
+/* Sticky Effect */
+
+.navbar.scrolled{
+    background:#050816;
+}
+
+/* Small Animation */
+
+.logo img:hover{
+    transform:rotate(8deg) scale(1.05);
+    transition:.4s;
+}
