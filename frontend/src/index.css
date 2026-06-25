@@ -1,0 +1,94 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root */
+:root {
+  --primary: #0b1120;
+  --secondary: #111827;
+  --accent: #2563eb;
+  --text: #ffffff;
+  --text-light: #cbd5e1;
+  --card: rgba(255, 255, 255, 0.08);
+  --border: rgba(255, 255, 255, 0.15);
+}
+
+/* Body */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #020617;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Root Container */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* App */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(2, 6, 23, 0.85),
+      rgba(2, 6, 23, 0.95)
+    ),
+    url("/images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section */
+section {
+  width: 100%;
+  padding: 80px 8%;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Button */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Image */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
