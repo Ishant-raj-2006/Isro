@@ -1,34 +1,18 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import UploadBox from "../components/UploadBox";
-import SearchButton from "../components/SearchButton";
-import ResultGrid from "../components/ResultGrid";
-import Footer from "../components/Footer";
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
+import StatusCard from "../components/Dashboard/StatusCard";
+import UploadBox from "../components/Upload/UploadBox";
+import ResultsGrid from "../components/Results/ResultsGrid";
+import Footer from "../components/Footer/Footer";
 
 function Home() {
   return (
     <>
       <Navbar />
-
-      <main>
-
-        <Hero />
-
-        <section className="upload-section">
-          <div className="container">
-            <UploadBox />
-            <SearchButton />
-          </div>
-        </section>
-
-        <section className="result-section">
-          <div className="container">
-            <ResultGrid />
-          </div>
-        </section>
-
-      </main>
-
+      <Hero />
+      <StatusCard />
+      <UploadBox />
+      <ResultsGrid />
       <Footer />
     </>
   );
