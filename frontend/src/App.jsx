@@ -139,10 +139,22 @@
 
 // export default App;
 
+import { useEffect, useState } from "react";
 import LoadingScreen from "./components/Loading/LoadingScreen";
+import Home from "./pages/Home";
 
 function App() {
-  return <LoadingScreen />;
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return loading ? <LoadingScreen /> : <Home />;
 }
 
 export default App;
