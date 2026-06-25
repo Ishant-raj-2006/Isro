@@ -1,0 +1,172 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(5, 8, 22, 0.75);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.logo-text h2 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo-text span {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* Navigation */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #00e5ff;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #00e5ff;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* Right Section */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Status Box */
+
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.status-box svg {
+  color: #00e5ff;
+}
+
+/* Menu Button */
+
+.menu-btn {
+  display: none;
+  font-size: 22px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover */
+
+.status-box:hover {
+  border-color: #00e5ff;
+  transform: translateY(-2px);
+  transition: .3s;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 992px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: rgba(5,8,22,.96);
+    backdrop-filter: blur(15px);
+    flex-direction: column;
+    padding: 30px 0;
+    transition: .3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .status-box {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-text h2 {
+    font-size: 18px;
+  }
+
+  .logo-text span {
+    font-size: 11px;
+  }
+}

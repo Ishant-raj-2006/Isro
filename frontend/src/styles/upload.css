@@ -1,0 +1,154 @@
+/* ==========================
+   UPLOAD SECTION
+========================== */
+
+.upload-section{
+    padding:100px 0;
+}
+
+.upload-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.upload-header h2{
+    color:white;
+    font-size:2.8rem;
+}
+
+.upload-header p{
+    margin-top:15px;
+    color:#CBD5E1;
+}
+
+.upload-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+}
+
+/* Upload Area */
+
+.upload-area{
+
+    min-height:350px;
+
+    border:3px dashed #00E5FF;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.upload-area:hover{
+
+    background:rgba(0,229,255,.06);
+
+}
+
+.upload-icon{
+
+    font-size:70px;
+
+    color:#00E5FF;
+
+    margin-bottom:20px;
+
+}
+
+.upload-area h3{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+.upload-area p{
+
+    color:#CBD5E1;
+
+}
+
+/* Preview */
+
+.preview-image{
+
+    width:100%;
+
+    max-height:400px;
+
+    object-fit:contain;
+
+    border-radius:15px;
+
+}
+
+/* File */
+
+.file-details{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:25px;
+
+    color:white;
+
+}
+
+/* Buttons */
+
+.upload-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+    margin-top:35px;
+
+}
+
+@media(max-width:768px){
+
+.upload-buttons{
+
+    flex-direction:column;
+
+}
+
+.upload-buttons button{
+
+    width:100%;
+
+}
+
+}

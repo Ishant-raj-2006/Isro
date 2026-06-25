@@ -1,0 +1,350 @@
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: url("/images/stars-bg.jpg") center/cover no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(5, 8, 22, 0.88),
+    rgba(5, 8, 22, 0.95)
+  );
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ===========================
+   LEFT
+=========================== */
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-badge {
+  width: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  background: rgba(255,255,255,.08);
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  border-radius: 50px;
+
+  color: #00E5FF;
+
+  margin-bottom: 25px;
+
+  backdrop-filter: blur(12px);
+}
+
+.hero-badge svg{
+    font-size:18px;
+}
+
+.hero-left h1{
+    font-size:4rem;
+    font-weight:800;
+    line-height:1.2;
+    color:white;
+}
+
+.hero-left h1 span{
+    color:#00E5FF;
+}
+
+.hero-left p{
+    margin-top:25px;
+
+    max-width:620px;
+
+    font-size:18px;
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+}
+
+/* Buttons */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+/* Statistics */
+
+.hero-stats{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:60px;
+
+}
+
+.stat-card{
+
+    min-width:150px;
+
+    padding:22px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00E5FF;
+
+}
+
+.stat-card h2{
+
+    color:#00E5FF;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    color:#CBD5E1;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   RIGHT
+=========================== */
+
+.hero-right{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* Earth */
+
+.earth-image{
+
+    width:520px;
+
+    animation:rotateEarth 45s linear infinite;
+
+    filter:drop-shadow(0 0 50px rgba(0,229,255,.45));
+
+}
+
+/* Satellite */
+
+.satellite-image{
+
+    position:absolute;
+
+    width:180px;
+
+    top:12%;
+
+    right:10%;
+
+    animation:floatSatellite 5s ease-in-out infinite;
+
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes rotateEarth{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes floatSatellite{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.hero-badge{
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-stats{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-left h1{
+
+    font-size:3rem;
+
+}
+
+.earth-image{
+
+    width:380px;
+
+}
+
+.satellite-image{
+
+    width:140px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+    padding-top:120px;
+
+}
+
+.hero-left h1{
+
+    font-size:2.3rem;
+
+}
+
+.hero-left p{
+
+    font-size:16px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.hero-buttons button{
+
+    width:100%;
+
+}
+
+.earth-image{
+
+    width:280px;
+
+}
+
+.satellite-image{
+
+    width:110px;
+
+}
+
+.stat-card{
+
+    width:100%;
+
+}
+
+}

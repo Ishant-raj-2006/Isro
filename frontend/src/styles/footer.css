@@ -1,0 +1,213 @@
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    margin-top:100px;
+
+    background:#040B1C;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+    padding:70px 0;
+
+}
+
+/* Logo */
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-icon{
+
+    color:#00E5FF;
+
+    font-size:32px;
+
+}
+
+.footer-logo h2{
+
+    color:white;
+
+}
+
+/* About */
+
+.footer-about p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+/* Links */
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-links h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.footer-links a{
+
+    color:#CBD5E1;
+
+    text-decoration:none;
+
+    margin:10px 0;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#00E5FF;
+
+}
+
+/* Contact */
+
+.footer-contact h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+.footer-contact p{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    color:#CBD5E1;
+
+}
+
+/* Social */
+
+.footer-social{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.footer-social a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#00E5FF;
+
+    color:#050816;
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    text-align:center;
+
+    padding:25px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-bottom p{
+
+    color:#94A3B8;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    justify-content:center;
+
+}
+
+.footer-contact p{
+
+    justify-content:center;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+}
+
+}

@@ -1,0 +1,158 @@
+/* ==========================
+   RESULTS
+========================== */
+
+.results-section{
+    padding:100px 0;
+}
+
+.results-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.results-header h2{
+    color:white;
+    font-size:2.8rem;
+}
+
+.results-header p{
+    margin-top:15px;
+    color:#CBD5E1;
+}
+
+/* Grid */
+
+.results-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/* Card */
+
+.result-card{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+
+}
+
+.result-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#00E5FF;
+
+}
+
+/* Image */
+
+.result-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/* Content */
+
+.result-content{
+
+    padding:25px;
+
+}
+
+.result-content h3{
+
+    color:white;
+
+    margin:15px 0;
+
+}
+
+.result-content p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#CBD5E1;
+
+    margin:12px 0;
+
+}
+
+/* Similarity */
+
+.similarity-badge{
+
+    width:fit-content;
+
+    padding:8px 15px;
+
+    background:#00E5FF;
+
+    color:#050816;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+}
+
+/* Button */
+
+.view-btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#1D4ED8;
+
+}
